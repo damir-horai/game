@@ -1,0 +1,58 @@
+  to {
+        transform: scale(1.2);
+        text-shadow: 0 0 20px #ffff00,
+                     0 0 40px #ff00ff;
+    }
+}
+
+/* Конфеті */
+.confetti {
+    font-size: 35px;
+    animation: confettiEffect 1s ease-in-out;
+}
+
+@keyframes confettiEffect {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px) rotate(360deg);
+        opacity: 0;
+    }
+}
+input:focus {
+    box-shadow: 0 0 15px #00ffff,
+                0 0 25px #00ffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff00aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff00aa,
+                0 0 20px #ff00aa;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff33cc;
+    box-shadow: 0 0 20px #ff00aa,
+                0 0 40px #ff00aa;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
